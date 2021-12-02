@@ -18,6 +18,7 @@
     "homepage": "https://github.com/Aleixfo/Botiga#readme",
     "devDependencies": {
         "gulp": "^4.0.2",
+        "gulp-htmlmin": "^5.0.1",
         "gulp-imagemin": "^8.0.0",
         "gulp-sass": "^5.0.0",
         "gulp-uglify": "^3.0.2",
