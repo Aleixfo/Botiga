@@ -1,0 +1,26 @@
+{
+    "name": "practica",
+    "version": "1.0.0",
+    "description": "Tenda (Practica CSS)",
+    "main": "a.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Aleixfo/Botiga.git"
+    },
+    "author": "Aleix Font",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Aleixfo/Botiga/issues"
+    },
+    "homepage": "https://github.com/Aleixfo/Botiga#readme",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-imagemin": "^8.0.0",
+        "gulp-sass": "^5.0.0",
+        "gulp-uglify": "^3.0.2",
+        "sass": "^1.44.0"
+    }
+}
