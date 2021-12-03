@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass')(require('sass')),
     uglify = require("gulp-uglify"),
     htmlmin = require('gulp-htmlmin'),
+    imagemin = require('gulp-imagemin'),
     { series, parallel } = require('gulp');
 
 //Minimitza els arxius de la carpeta .css i deixa'ls dins la carpeta "dist/css"
@@ -31,5 +32,13 @@ function minimitzahtml() {
 
 exports.minhtml = minimitzahtml;
 
+function minimitzaimg() {
+    return gulp.src('./img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist'))
+}
+
+exports.minimg = minimitzaimg;
+
 //Tasca Conjunta
-gulp.task('MinTot', series(minimitzacss, minimitzajs, minimitzahtml));
+gulp.task('build', series(minimitzacss, minimitzajs, minimitzahtml, minimitzaimg));
